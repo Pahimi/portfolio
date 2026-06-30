@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: 'Pliant', sans-serif;
 }
 
@@ -10,7 +11,6 @@
 }
 
 main {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #1A1617;
     height: 100vh;
     color: white;
@@ -23,7 +23,6 @@ header {
     top: 0;
     position: sticky;
     background-color: #1A1617;
-    backdrop-filter: blur(10px);
     padding: 20px;
     margin-bottom: 20px;
     border-bottom: 1px solid #161112;
@@ -45,9 +44,7 @@ h2, h3 {
     color: #e0e0e0;
 }
 
-/* Conteneur principal de la carte */
 .projet-card {
-    /* background-color: #161112; */
     border-radius: 12px;
     padding: 15px;
     display: flex;
@@ -58,19 +55,16 @@ h2, h3 {
     border: 1px solid #161112;
 }
 
-/* Colonne Gauche : Image */
 .projet-image-container {
     flex: 1;
-    /* max-width: 40%; */
 }
 
 .projet-image {
     width: 100%;
     height: auto;
-    border-radius: 16px; /* Bords arrondis de la capture d'écran interne */
+    border-radius: 16px;
 }
 
-/* Colonne Droite : Infos */
 .projet-details {
     flex: 1.5;
     display: flex;
@@ -78,8 +72,6 @@ h2, h3 {
     gap: 12px;
 }
 
-
-/* Titre du Projet */
 .projet-title {
     font-size: 1.8rem;
     font-weight: 700;
@@ -89,15 +81,13 @@ h2, h3 {
 }
 
 .title-br {
-    display: block; /* Permet le retour à la ligne pour (BookIt) */
+    display: block;
 }
 
-/* Description */
 .projet-description {
     color: #BEC0CA;
 }
 
-/* Technologies / Tags */
 .projet-tags {
     display: flex;
     gap: 20px;
@@ -131,7 +121,7 @@ header a {
 }
 
 .exper span {
-    background-color: #1CB7AD;
+    background: linear-gradient(45deg, #1BA69D, white, blue);;
     border-radius: 12px;
     font-size: 12px;
     margin-bottom: 10px;
@@ -186,10 +176,10 @@ header a {
 }
 
 .left::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Edge récents */
+    display: none;
 }
 
-.left>img {
+.left div>img {
     object-fit: cover;
     border: 5px solid #32B3A3;
     height: 130px;
@@ -299,7 +289,6 @@ header a {
     width: 20px;
 }
 
-
 .localisation {
     margin-bottom: 10px;
 }
@@ -314,12 +303,105 @@ header a {
     height: 25px;
     width: 25px;
 }
-/* Responsive : s'adapte sur mobile */
-@media (max-width: 768px) {
+
+.footer {
+    text-align: center; 
+    color: #BEC0CA; 
+    padding: 10px;
+}
+
+.footer>div {
+    display: inline-block; 
+    justify-content: space-between;
+}
+
+.footer .sup_info {
+    margin-top: 10px;
+}
+
+.footer .sup_info h4 {
+    margin-bottom: 5px;
+}
+
+footer .sup_info {
+    margin-right: 10px;
+}
+
+footer {
+    display: none;
+}
+
+         /* ================================================== RESPONSIVE ==================================================== */
+@media (max-width: 1119px) {
+
+    .container {
+        display: block;
+    }
+
+    body {
+        background-color: #161112;
+    }
+
+    .left {
+        text-align: center;
+    }
+
+    .left div>img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .left .langProg .grpe p {
+        margin-bottom: 30px;
+    }
+
+    .left,
+    .main {
+        height: 100%;
+    }
+
+    .content {
+        margin-top: 30px;
+    }
+
+    .presentation p {
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: center;
+    }
+
+    .left .reseaux {
+        display: none;
+    }
+
+    .left .sup_info {
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
+
+    footer {
+        display: inline;
+        background-color: #1A1A1A;
+        color: white;
+    }
+
+    footer>div {
+        display: flex; 
+        justify-content: space-between;
+    }
+
+    footer .sup_info h4 {
+        text-align: center;
+    }
+
     .projet-card {
         flex-direction: column;
         align-items: flex-start;
-        padding-bottom: 70px; /* Espace pour le badge absolu */
+        padding-bottom: 70px;
     }
     
     .projet-image-container {
@@ -327,3 +409,60 @@ header a {
         width: 100%;
     }
 }
+
+@media (max-width: 360px) {
+
+    .projet-title {
+        font-size: 12px;
+    }
+
+    .projet-tags {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    footer .reseaux {
+        display: none;
+    }
+
+    .projet-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 70px;
+    }
+    
+    .projet-image-container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .sup_info {
+        margin-left: 55px;
+    }
+}
+
+@media (max-width: 393px) {
+
+    .reseaux img {
+        height: 35px;
+        width: 35px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .sup_info {
+        margin-right: 50px;
+    }
+
+}
+
+/* @media (max-width: 525px) {
+
+    footer .reseaux {
+        display: none;
+    }
+
+} */
