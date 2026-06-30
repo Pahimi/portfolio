@@ -1,0 +1,329 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Pliant', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1.8fr 3fr;
+}
+
+main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1A1617;
+    height: 100vh;
+    color: white;
+    overflow-y: scroll;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    top: 0;
+    position: sticky;
+    background-color: #1A1617;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #161112;
+}
+
+header img {
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+}
+
+.content {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+h2, h3 {
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+/* Conteneur principal de la carte */
+.projet-card {
+    /* background-color: #161112; */
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    max-width: 900px;
+    margin: 20px auto;
+    border: 1px solid #161112;
+}
+
+/* Colonne Gauche : Image */
+.projet-image-container {
+    flex: 1;
+    /* max-width: 40%; */
+}
+
+.projet-image {
+    width: 100%;
+    height: auto;
+    border-radius: 16px; /* Bords arrondis de la capture d'écran interne */
+}
+
+/* Colonne Droite : Infos */
+.projet-details {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+/* Titre du Projet */
+.projet-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.3;
+    color: #ffffff;
+}
+
+.title-br {
+    display: block; /* Permet le retour à la ligne pour (BookIt) */
+}
+
+/* Description */
+.projet-description {
+    color: #BEC0CA;
+}
+
+/* Technologies / Tags */
+.projet-tags {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    color: #e0e0e0;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.exper {
+    display: grid;
+    grid-template-columns: 0.5fr 4fr;
+    background-color: #161112;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 20px auto;
+
+}
+
+.exper p {
+    color: #BEC0CA;
+    font-size: 13px;
+}
+
+.exper span {
+    background-color: #1CB7AD;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding: 1px 5px;
+    font-weight: bold;
+}
+
+.exper span:hover,
+.caractere:hover,
+.cv:hover {
+    opacity: .7;
+}
+
+.exper span a {
+    text-decoration: none;
+    color: black;
+}
+
+.exper p,
+.exper h4 {
+    margin-top: 10px;
+}
+
+.caractere {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18342C;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    margin-top: 40px;
+}
+
+.caractere a {
+    text-decoration: none;
+    color: white;
+}
+
+/* La GAUCHE */
+.left {
+    background-color: #161112;
+    height: 100vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #BEC0CA;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.left::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge récents */
+}
+
+.left>img {
+    object-fit: cover;
+    border: 5px solid #32B3A3;
+    height: 130px;
+    width: 140px;
+    margin-top: 30px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.reseaux img {
+    height: 60px;
+    width: 60px;
+    margin-right: 18px;
+}
+
+.langProg {
+    display: flex;
+    overflow: hidden; /* Masque les groupes qui attendent leur tour */
+    width: 100%;
+}
+
+.grpe {
+    flex: 0 0 100%; /* Chaque groupe occupe 100% de la largeur disponible */
+}
+
+.list {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.list span {
+    display: inline-block;
+    justify-content: center;
+    background: linear-gradient(45deg, #1BA69D, white, blue);
+    color: black;
+    padding: 1px 8px;
+    border-radius: 12px;
+    margin-right: 6px;
+    font-size: 11px;
+    margin-left: 4px;
+}
+
+.presentation {
+    margin-bottom: 20px;
+}
+
+.reseaux {
+    margin-top: 20px;
+}
+
+.competance div {
+    background-color: #1DB651;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.competance img {
+    height: 25px;
+    width: 25px;
+    margin-right: 2px
+}
+
+.competance a {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.cv div {
+    display: inline-block;
+    background-color: #1BA69D;
+    padding: 9px;
+    font-weight: bold;
+    color: black;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+.cv a,
+.localisation a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv a {
+    color: black;
+}
+
+.localisation a {
+    color: #BEC0CA;
+    margin-top: 10px;
+}
+
+.cv img {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+
+.localisation {
+    margin-bottom: 10px;
+}
+
+.localisation div {
+    display: inline-block;
+    align-items: center;
+}
+
+.localisation img {
+    margin-right: 3px;
+    height: 25px;
+    width: 25px;
+}
+/* Responsive : s'adapte sur mobile */
+@media (max-width: 768px) {
+    .projet-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 70px; /* Espace pour le badge absolu */
+    }
+    
+    .projet-image-container {
+        max-width: 100%;
+        width: 100%;
+    }
+}
