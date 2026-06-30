@@ -121,7 +121,7 @@ header a {
 }
 
 .exper span {
-    background: linear-gradient(45deg, #1BA69D, white, blue);;
+    background: linear-gradient(45deg, #1BA69D, white, blue);
     border-radius: 12px;
     font-size: 12px;
     margin-bottom: 10px;
@@ -232,7 +232,7 @@ header a {
 }
 
 .reseaux {
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .competance div {
@@ -310,6 +310,10 @@ header a {
     padding: 10px;
 }
 
+.footer>p {
+    margin-top: 7px;
+}
+
 .footer>div {
     display: inline-block; 
     justify-content: space-between;
@@ -371,7 +375,7 @@ footer {
         text-align: center;
     }
 
-    .left .reseaux {
+    .left .footer {
         display: none;
     }
 
@@ -394,8 +398,9 @@ footer {
         justify-content: space-between;
     }
 
-    footer .sup_info h4 {
+    footer {
         text-align: center;
+        padding: 30px;
     }
 
     .projet-card {
@@ -437,9 +442,6 @@ footer {
         width: 100%;
     }
 
-    .sup_info {
-        margin-left: 55px;
-    }
 }
 
 @media (max-width: 393px) {
@@ -450,19 +452,3 @@ footer {
     }
 
 }
-
-@media (max-width: 768px) {
-
-    .sup_info {
-        margin-right: 50px;
-    }
-
-}
-
-/* @media (max-width: 525px) {
-
-    footer .reseaux {
-        display: none;
-    }
-
-} */
