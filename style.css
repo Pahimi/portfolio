@@ -89,7 +89,7 @@ h2, h3 {
 }
 
 .tag {
-    background: linear-gradient(45deg, #1BA69D, white, blue);
+    background: linear-gradient(45deg, #1BA69D, white, #161112);
     color: black;
     display: inline-block;
     font-weight: bold;
@@ -218,7 +218,7 @@ header a {
 .list span {
     display: inline-block;
     justify-content: center;
-    background: linear-gradient(45deg, #1BA69D, white, blue);
+    background: linear-gradient(45deg, #1BA69D, white, #1DB651);
     color: black;
     padding: 1px 8px;
     border-radius: 12px;
@@ -332,7 +332,7 @@ footer {
     }
 
     body {
-        background-color: #161112;
+        background-color: #1A1617;
     }
 
     .left {
