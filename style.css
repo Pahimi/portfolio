@@ -88,16 +88,16 @@ h2, h3 {
     color: #BEC0CA;
 }
 
-.projet-tags {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
 .tag {
-    color: #e0e0e0;
-    font-weight: 500;
-    font-size: 1rem;
+    background: linear-gradient(45deg, #1BA69D, white, blue);
+    color: black;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 12px;
+    padding: 2px 3px;
+    border-radius: 12px;
+    margin-bottom: 10px;
 }
 
 header a {
@@ -179,14 +179,14 @@ header a {
     display: none;
 }
 
-.left div>img {
+.left>div>img {
     object-fit: cover;
     border: 5px solid #32B3A3;
     height: 130px;
     width: 140px;
-    margin-top: 30px;
+    margin-top: 25px;
     border-radius: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .name {
@@ -228,6 +228,7 @@ header a {
 }
 
 .presentation {
+    text-align: center;
     margin-bottom: 15px;
 }
 
@@ -319,18 +320,6 @@ header a {
     justify-content: space-between;
 }
 
-.footer .sup_info {
-    margin-top: 10px;
-}
-
-.footer .sup_info h4 {
-    margin-bottom: 5px;
-}
-
-footer .sup_info {
-    margin-right: 10px;
-}
-
 footer {
     display: none;
 }
@@ -375,30 +364,15 @@ footer {
         text-align: center;
     }
 
-    .left .footer {
-        display: none;
-    }
-
-    .left .sup_info {
-        display: none;
-    }
-
     header {
         display: none;
     }
 
     footer {
+        font-weight: bold;
         display: inline;
         background-color: #1A1A1A;
         color: white;
-    }
-
-    footer>div {
-        display: flex; 
-        justify-content: space-between;
-    }
-
-    footer {
         text-align: center;
         padding: 30px;
     }
@@ -425,10 +399,6 @@ footer {
         display: flex;
         gap: 10px;
         flex-wrap: wrap;
-    }
-
-    footer .reseaux {
-        display: none;
     }
 
     .projet-card {
