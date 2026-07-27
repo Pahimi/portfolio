@@ -89,7 +89,8 @@ h2, h3 {
 }
 
 .tag {
-    background: linear-gradient(45deg, #1BA69D, white, #161112);
+    /* background: linear-gradient(45deg, #1BA69D, white, #161112); */
+    background: linear-gradient(45deg, #1BA69D, white, blue);
     color: black;
     display: inline-block;
     font-weight: bold;
@@ -105,7 +106,7 @@ header>a {
     color: white;
 }
 
-.exper {
+/* .exper {
     display: grid;
     grid-template-columns: 0.5fr 4fr;
     background-color: #161112;
@@ -118,7 +119,7 @@ header>a {
 .exper p {
     color: #BEC0CA;
     font-size: 13px;
-}
+} */
 
 .exper span {
     background: linear-gradient(45deg, #1BA69D, white, blue);
@@ -222,17 +223,17 @@ header>a {
     font-weight: bold;
 }
 
-.list span {
+/* .list span {
     display: inline-block;
     justify-content: center;
-    background: linear-gradient(45deg, #1BA69D, white, #1DB651);
+    background: linear-gradient(45deg, #1BA69D, white, blue);
     color: black;
     padding: 1px 8px;
     border-radius: 12px;
     margin-right: 6px;
     font-size: 11px;
     margin-left: 4px;
-}
+} */
 
 .presentation {
     text-align: center;
