@@ -100,7 +100,7 @@ h2, h3 {
     margin-bottom: 10px;
 }
 
-header a {
+header>a {
     text-decoration: none;
     color: white;
 }
@@ -163,7 +163,7 @@ header a {
     color: white;
 }
 
-/* La GAUCHE */
+/* =====================================================La GAUCHE======================================================== */
 .left {
     background-color: #161112;
     height: 100vh;
@@ -184,7 +184,7 @@ header a {
     border: 5px solid #32B3A3;
     height: 130px;
     width: 140px;
-    margin-top: 25px;
+    margin-top: 10px;
     border-radius: 100%;
     margin-bottom: 15px;
 }
@@ -197,7 +197,7 @@ header a {
 .reseaux img {
     height: 60px;
     width: 60px;
-    margin-right: 18px;
+    margin-right: 0px;
 }
 
 .langProg {
@@ -208,6 +208,8 @@ header a {
 
 .grpe {
     flex: 0 0 100%; /* Chaque groupe occupe 100% de la largeur disponible */
+    justify-content: center;
+    margin-left: 18px;
 }
 
 .list {
@@ -346,7 +348,7 @@ footer {
     }
 
     .left .langProg .grpe p {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     .left,
@@ -421,4 +423,23 @@ footer {
         width: 35px;
     }
 
+}
+
+@media (max-width: 375px) {
+
+    footer {
+        font-size: 10px;
+    }
+
+    .projet-details h3 {
+        font-size: 14px;
+    }
+
+    .projet-description, .presentation, .left>div {
+        font-size: 12px;
+    }
+
+    .localisation {
+        font-size: 15px;
+    }
 }
