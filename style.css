@@ -163,6 +163,11 @@ header>a {
     color: white;
 }
 
+.title-br a{
+    color: blue;
+    font-size: 25px;
+}
+
 /* =====================================================La GAUCHE======================================================== */
 .left {
     background-color: #161112;
